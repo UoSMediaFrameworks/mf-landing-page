@@ -4,7 +4,7 @@
 
 ## Preview
 
-[![Creative Preview](preview.JPG)](https://blackrockdigital.github.io/startbootstrap-creative/)
+[![Creative Preview](preview.JPG#1)](https://blackrockdigital.github.io/startbootstrap-creative/)
 
 **[View Live Preview](https://blackrockdigital.github.io/startbootstrap-creative/)**
 
