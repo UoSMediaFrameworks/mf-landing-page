@@ -2,6 +2,17 @@
 
 [Creative](http://startbootstrap.com/template-overviews/creative/) is a one page creative theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
+## Server Setup
+
+In this order:
+
+- `npm install`
+- `gulp rebuild` rebuild page_source
+- `gulp copy` copy public files from page_source
+- `gulp start` start nodemon to run the express server
+
+Note that by default the server will run on port 3000, add enviroment variable to change this.
+
 ## Preview
 
 [![Creative Preview](preview.JPG#1)](https://blackrockdigital.github.io/startbootstrap-creative/)
