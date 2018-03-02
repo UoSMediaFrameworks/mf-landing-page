@@ -30,10 +30,11 @@ gulp.task('start', function () {
         ext: 'js',
         env: {'NODE_ENV': 'production'}
       })
-})
+});
 
 gulp.task('default', ['copy']);
 
 gulp.task('rebuild', ['build_page']);
 
+gulp.task('azure', ['rebuild', 'copy', 'start']);
 

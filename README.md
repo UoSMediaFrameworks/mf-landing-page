@@ -13,6 +13,13 @@ In this order:
 
 Note that by default the server will run on port 3000, add enviroment variable to change this.
 
+## Azure Server Setup
+
+In this order:
+
+- `npm install`
+- `npm start`
+
 ## Preview
 
 [![Creative Preview](preview.JPG#1)](https://blackrockdigital.github.io/startbootstrap-creative/)
