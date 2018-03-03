@@ -13,6 +13,31 @@ In this order:
 
 Note that by default the server will run on port 3000, add enviroment variable to change this.
 
+## Azure Deployment
+
+After running Server Setup locally
+
+- `# Bash
+   zip -r myAppFiles.zip .`
+
+or 
+
+- `# PowerShell
+   Compress-Archive -Path * -DestinationPath myAppFiles.zip`
+   
+- visit https://<app name>.scm.azurewebsites.net/ZipDeploy
+
+- app name = uos-sceneeditor
+
+- Upload the zip
+
+- web.config required for iis to handover requests to express and nodejs when running in Azure
+
+### Caveats
+
+- Ensure to match nodejs and npm version
+- npm 3+ flatten node_module deps - this is key for reduces the file path length problem that occurs on Azure
+
 ## Preview
 
 [![Creative Preview](preview.JPG#1)](https://blackrockdigital.github.io/startbootstrap-creative/)
