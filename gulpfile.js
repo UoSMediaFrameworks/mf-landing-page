@@ -36,5 +36,5 @@ gulp.task('default', ['copy']);
 
 gulp.task('rebuild', ['build_page']);
 
-gulp.task('azure', ['rebuild', 'copy']);
+gulp.task('azure', ['rebuild', 'copy', 'start']);
 
