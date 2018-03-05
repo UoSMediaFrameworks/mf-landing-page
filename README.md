@@ -17,13 +17,15 @@ Note that by default the server will run on port 3000, add enviroment variable t
 
 After running Server Setup locally
 
-- `# Bash
-   zip -r myAppFiles.zip .`
+bash 
 
-or 
+`zip -r myAppFiles.zip .`
 
-- `# PowerShell
-   Compress-Archive -Path * -DestinationPath myAppFiles.zip`
+PowerShell
+
+`Compress-Archive -Path * -DestinationPath myAppFiles.zip`
+   
+### Deploying the zip
    
 - visit https://<app name>.scm.azurewebsites.net/ZipDeploy
 
@@ -33,7 +35,7 @@ or
 
 - web.config required for iis to handover requests to express and nodejs when running in Azure
 
-### Caveats
+#### Caveats
 
 - Ensure to match nodejs and npm version
 - npm 3+ flatten node_module deps - this is key for reduces the file path length problem that occurs on Azure
