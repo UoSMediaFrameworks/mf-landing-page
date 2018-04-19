@@ -17,17 +17,27 @@ Note that by default the server will run on port 3000, add enviroment variable t
 
 After running Server Setup locally
 
+gulp
+
+`gulp zip`
+
+or
+
 bash 
 
 `zip -r myAppFiles.zip .`
 
+or
+
 PowerShell
 
 `Compress-Archive -Path * -DestinationPath myAppFiles.zip`
+
    
 ### Deploying the zip
    
 - visit https://<app name>.scm.azurewebsites.net/ZipDeploy
+- https://uos-sceneeditor.scm.azurewebsites.net/ZipDeploy
 
 - app name = uos-sceneeditor
 
