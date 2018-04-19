@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var chug = require( 'gulp-chug' );
 var nodemon = require('gulp-nodemon');
+var zip = require('gulp-zip');
 
 gulp.task('build_page', function() {
     gulp.src( './page_source/gulpfile.js' )
@@ -30,7 +31,13 @@ gulp.task('start', function () {
         ext: 'js',
         env: {'NODE_ENV': 'production'}
       })
-})
+});
+
+gulp.task('zip', function() {
+    gulp.src('./**')
+        .pipe(zip('archive.zip'))
+        .pipe(gulp.dest('./'))
+});
 
 gulp.task('default', ['copy']);
 
