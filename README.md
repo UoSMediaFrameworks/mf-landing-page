@@ -2,53 +2,14 @@
 
 [Creative](http://startbootstrap.com/template-overviews/creative/) is a one page creative theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
-## Server Setup
+## Setup
 
 In this order:
 
 - `npm install`
-- `gulp rebuild` rebuild page_source
-- `gulp copy` copy public files from page_source
-- `gulp start` start nodemon to run the express server
+- `npm start`
 
 Note that by default the server will run on port 3000, add enviroment variable to change this.
-
-## Azure Deployment
-
-After running Server Setup locally
-
-gulp
-
-`gulp zip`
-
-or
-
-bash 
-
-`zip -r myAppFiles.zip .`
-
-or
-
-PowerShell
-
-`Compress-Archive -Path * -DestinationPath myAppFiles.zip`
-
-   
-### Deploying the zip
-   
-- visit https://<app name>.scm.azurewebsites.net/ZipDeploy
-- https://uos-sceneeditor.scm.azurewebsites.net/ZipDeploy
-
-- app name = uos-sceneeditor
-
-- Upload the zip
-
-- web.config required for iis to handover requests to express and nodejs when running in Azure
-
-#### Caveats
-
-- Ensure to match nodejs and npm version
-- npm 3+ flatten node_module deps - this is key for reduces the file path length problem that occurs on Azure
 
 ## Preview
 

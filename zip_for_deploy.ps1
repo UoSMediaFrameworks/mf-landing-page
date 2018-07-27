@@ -1,1 +1,0 @@
-Compress-Archive -Path * -DestinationPath myAppFiles.zip
