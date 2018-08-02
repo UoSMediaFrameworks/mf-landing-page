@@ -25,6 +25,8 @@
 
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
+    <script src="http://localhost:5000/js/zoid/zoid.min.js"></script>
+    <script src="http://localhost:5000/js/zoid/mycomp.js"></script>
 
   </head>
 
@@ -140,7 +142,38 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="demo" >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+              <h2 class="section-heading">Demo</h2>
+
+              <p class="mb-5">Graph - click on nodes to recall content</p>
+              <div style="height:400px;background:black" id="graph"></div>
+
+              <p class="mb-5">Player - content will be shown based on semantic graph</p>
+              <div style="height:400px;background:black" id="viewer"></div>
+
+              <script>
+                  MyLoginZoidComponent.render({
+                    publicContentKey: "A",
+                    onRoomAssigned: function(roomID) {
+                          MyLoginZoidComponent.render({
+                             publicContentKey: "B",
+                             roomID: roomID
+                          }, '#viewer');
+                      } 
+                 }, '#graph');
+              </script>
+
+
+            </div>
+          </div>
+        </div> 
+      </div>
+    </section>
+
+    <section id="contact" style="background: #dee2e6">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto text-center">
@@ -175,7 +208,7 @@
                   </div>
                 </fieldset>  
               </form>
-        </div>
+            </div>
       </div>
     </section>
 
